@@ -17,6 +17,7 @@ spec:
     path: charts/reddit
   values:
     ui:
+      zipkinEnabled: false
       image:
         repository: czm41k/ui
         tag: 0.1.4
