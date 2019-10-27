@@ -21,6 +21,7 @@ spec:
         repository: czm41k/ui
         tag: 0.1.4
     post:
+      zipkinEnabled: false
       image:
         repository: czm41k/post
         tag: 0.1.1
