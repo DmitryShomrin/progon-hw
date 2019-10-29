@@ -17,12 +17,10 @@ spec:
     path: charts/reddit
   values:
     ui:
-      zipkinEnabled: false
       image:
         repository: dmitryshomrin/ui
         tag: 1.0.0
     post:
-      zipkinEnabled: false
       image:
         repository: dmitryshomrin/post
         tag: 1.0.0
