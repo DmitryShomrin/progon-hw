@@ -8,7 +8,7 @@ metadata:
     fluxcd.io/tag.comment: semver:~1.0
     fluxcd.io/tag.post: semver:~1.0
     fluxcd.io/tag.ui: semver:~1.0
-    # fluxcd.io/automated: 'true'
+    fluxcd.io/automated: 'true'
 spec:
   releaseName: istio-reddit
   chart:
