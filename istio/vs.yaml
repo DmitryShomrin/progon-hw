@@ -1,0 +1,45 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: reddit-comment
+spec:
+  hosts:
+  - comment
+  http:
+  - route:
+    - destination:
+        host: comment
+        port:
+            number: 9292
+
+---
+
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: reddit-post
+spec:
+  hosts:
+  - post
+  http:
+  - route:
+    - destination:
+        host: post
+        port:
+            number: 5000
+
+---
+
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: reddit-mongodb
+spec:
+  hosts:
+  - istio-reddit-mongodb
+  http:
+  - route:
+    - destination:
+        host: istio-reddit-mongodb
+        port:
+            number: 27017
