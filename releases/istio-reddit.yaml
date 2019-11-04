@@ -23,7 +23,7 @@ spec:
     post:
       image:
         repository: dmitryshomrin/post
-        tag: 1.0.6
+        tag: 1.0.7
     comment:
       image:
         repository: dmitryshomrin/comment
